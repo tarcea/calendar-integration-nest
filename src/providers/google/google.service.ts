@@ -10,7 +10,7 @@ import path from 'path';
 export class GoogleService {
   constructor(private config: ConfigService) {}
   getCalendar() {
-    return 'Here is your calendar, dude...';
+    return 'Here is your Google calendar, dude...';
   }
 
   SCOPES = [

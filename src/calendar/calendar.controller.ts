@@ -10,8 +10,13 @@ export class CalendarController {
     return this.calendarService.testRouteCalendar();
   }
 
-  @Get('google/get')
-  getGoogleCalendarEvents() {
-    return this.calendarService.getGoogleCalendarEvents();
+  @Get('/get/google')
+  async getGoogleCalendarEvents() {
+    return await this.calendarService.getGoogleCalendarEvents();
+  }
+
+  @Get('/get/outlook')
+  async getOutlookCalendarEvents() {
+    return await this.calendarService.getOutlookCalendarEvents();
   }
 }
