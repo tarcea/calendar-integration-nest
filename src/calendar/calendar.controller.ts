@@ -9,4 +9,9 @@ export class CalendarController {
   testRoute() {
     return this.calendarService.testRouteCalendar();
   }
+
+  @Get('google/get')
+  getGoogleCalendarEvents() {
+    return this.calendarService.getGoogleCalendarEvents();
+  }
 }

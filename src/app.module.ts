@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CalendarController } from './calendar/calendar.controller';
 import { CalendarService } from './calendar/calendar.service';
+import { GoogleService } from './calendar/google/google.service';
 
 @Module({
   imports: [
@@ -12,6 +13,6 @@ import { CalendarService } from './calendar/calendar.service';
     }),
   ],
   controllers: [AppController, CalendarController],
-  providers: [AppService, CalendarService],
+  providers: [AppService, CalendarService, GoogleService],
 })
 export class AppModule {}
